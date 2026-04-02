@@ -1,0 +1,372 @@
+/*
+ * Chutes design tokens extracted from chutes-web.
+ * Paths are relative to this directory so the file can be used locally inside this repo.
+ */
+
+@font-face {
+	font-family: 'Tomato Grotesk';
+	src: url('../chutes-web/static/cdn/fonts/Tomato/Tomato%20Grotesk%20Semibold.woff2')
+		format('woff2');
+	font-weight: 600 900;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Tomato Grotesk';
+	src: url('../chutes-web/static/cdn/fonts/Tomato/Tomato%20Grotesk%20Regular.woff2')
+		format('woff2');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Tomato Grotesk';
+	src: url('../chutes-web/static/cdn/fonts/Tomato/Tomato%20Grotesk%20Regular%20Slanted.woff2')
+		format('woff2');
+	font-weight: 400;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Tomato Grotesk';
+	src: url('../chutes-web/static/cdn/fonts/Tomato/Tomato%20Grotesk%20Light.woff2')
+		format('woff2');
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Tomato Grotesk';
+	src: url('../chutes-web/static/cdn/fonts/Tomato/Tomato%20Grotesk%20Light%20Slanted.woff2')
+		format('woff2');
+	font-weight: 300;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Neue Haas Unica';
+	src: url('../chutes-web/static/cdn/fonts/NeueHaas/NeueHaasUnicaW1G-Regular.woff2')
+		format('woff2');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Neue Haas Unica';
+	src: url('../chutes-web/static/cdn/fonts/NeueHaas/NeueHaasUnicaW1G-Medium.woff2')
+		format('woff2');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Neue Haas Unica';
+	src: url('../chutes-web/static/cdn/fonts/NeueHaas/NeueHaasUnicaW1G-MediumIt.woff2')
+		format('woff2');
+	font-weight: 500;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Neue Haas Unica';
+	src: url('../chutes-web/static/cdn/fonts/NeueHaas/NeueHaasUnicaW1G-Light.woff2')
+		format('woff2');
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Neue Haas Unica';
+	src: url('../chutes-web/static/cdn/fonts/NeueHaas/NeueHaasUnicaW1G-LightIt.woff2')
+		format('woff2');
+	font-weight: 300;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'JetBrains Mono Nerd Font';
+	src: url('../chutes-web/static/cdn/fonts/JetBrainsMonoNLNerdFont-Regular.woff2')
+		format('woff2');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+:root {
+	--chutes-background-hsl: 0 0% 5%;
+	--chutes-foreground-hsl: 0 0% 98%;
+	--chutes-muted-hsl: 0 0% 14.9%;
+	--chutes-muted-foreground-hsl: 0 0% 63.9%;
+	--chutes-popover-hsl: 0 0% 9%;
+	--chutes-popover-foreground-hsl: 0 0% 98%;
+	--chutes-card-hsl: 0 0% 9%;
+	--chutes-card-foreground-hsl: 0 0% 98%;
+	--chutes-border-hsl: 0 0% 14.9%;
+	--chutes-input-hsl: 0 0% 14.9%;
+	--chutes-primary-hsl: 0 0% 98%;
+	--chutes-primary-foreground-hsl: 0 0% 9%;
+	--chutes-secondary-hsl: 0 0% 14.9%;
+	--chutes-secondary-foreground-hsl: 0 0% 98%;
+	--chutes-accent-hsl: 0 0% 14.9%;
+	--chutes-accent-foreground-hsl: 0 0% 98%;
+	--chutes-destructive-hsl: 0 84.2% 60.2%;
+	--chutes-ring-hsl: 0 0% 14.9%;
+
+	--chutes-background: hsl(var(--chutes-background-hsl));
+	--chutes-foreground: hsl(var(--chutes-foreground-hsl));
+	--chutes-muted: hsl(var(--chutes-muted-hsl));
+	--chutes-muted-foreground: hsl(var(--chutes-muted-foreground-hsl));
+	--chutes-popover: hsl(var(--chutes-popover-hsl));
+	--chutes-popover-foreground: hsl(var(--chutes-popover-foreground-hsl));
+	--chutes-card: hsl(var(--chutes-card-hsl));
+	--chutes-card-foreground: hsl(var(--chutes-card-foreground-hsl));
+	--chutes-border: hsl(var(--chutes-border-hsl));
+	--chutes-input: hsl(var(--chutes-input-hsl));
+	--chutes-primary: hsl(var(--chutes-primary-hsl));
+	--chutes-primary-foreground: hsl(var(--chutes-primary-foreground-hsl));
+	--chutes-secondary: hsl(var(--chutes-secondary-hsl));
+	--chutes-secondary-foreground: hsl(var(--chutes-secondary-foreground-hsl));
+	--chutes-accent: hsl(var(--chutes-accent-hsl));
+	--chutes-accent-foreground: hsl(var(--chutes-accent-foreground-hsl));
+	--chutes-destructive: hsl(var(--chutes-destructive-hsl));
+	--chutes-ring: hsl(var(--chutes-ring-hsl));
+
+	--chutes-moss: #8bffc6;
+	--chutes-moss-soft: #cdeeb5;
+	--chutes-moss-dark: #2a2d27;
+	--chutes-papaya: #ffab96;
+	--chutes-papaya-dark: #3a231e;
+	--chutes-mountain: #b4c1ee;
+	--chutes-dark-mountain: #22232a;
+	--chutes-mango: #e3ec9f;
+	--chutes-mango-dark: #2a2f1d;
+	--chutes-banana: #ffe551;
+	--chutes-rayonlabs: #ffaca3;
+	--chutes-ether: #88ffb7;
+	--chutes-pro: #ffd9a7;
+
+	--chutes-ink-900: #0c0c0c;
+	--chutes-ink-800: #121212;
+	--chutes-ink-700: #151515;
+	--chutes-ink-600: #292929;
+	--chutes-ink-500: #343434;
+	--chutes-ink-400: #4a4a4a;
+	--chutes-ink-300: #9c9c9c;
+	--chutes-ink-200: #c4c4c4;
+	--chutes-ink-100: #e0e0e0;
+
+	--chutes-font-display: 'Tomato Grotesk', sans-serif;
+	--chutes-font-body: 'Neue Haas Unica', sans-serif;
+	--chutes-font-mono: 'JetBrains Mono Nerd Font', monospace;
+	--chutes-font-display-alt: 'Power Grotesk', sans-serif;
+
+	--chutes-radius-base: 0.5rem;
+	--chutes-radius-sm: 0.25rem;
+	--chutes-radius-md: 0.625rem;
+	--chutes-radius-lg: 1rem;
+	--chutes-radius-xl: 1.5rem;
+	--chutes-radius-pill: 999px;
+
+	--chutes-border-soft: 1px solid rgba(255, 255, 255, 0.08);
+	--chutes-border-strong: 1px solid rgba(255, 255, 255, 0.14);
+	--chutes-surface-1: rgba(18, 18, 18, 0.72);
+	--chutes-surface-2: rgba(21, 21, 21, 0.72);
+	--chutes-surface-3: rgba(41, 41, 41, 0.5);
+	--chutes-shadow-glass: 0 18px 60px rgba(0, 0, 0, 0.32);
+	--chutes-shadow-glow: 0 4px 24px rgba(139, 255, 198, 0.15);
+	--chutes-gradient-brand: linear-gradient(135deg, var(--chutes-moss) 0%, #fda4af 60%, #6366f1 100%);
+	--chutes-selection-bg: #93ffc6;
+	--chutes-selection-fg: #000000;
+}
+
+.chutes-font-display {
+	font-family: var(--chutes-font-display);
+}
+
+.chutes-font-body {
+	font-family: var(--chutes-font-body);
+}
+
+.chutes-font-mono {
+	font-family: var(--chutes-font-mono);
+}
+
+.chutes-gradient-text {
+	background: var(--chutes-gradient-brand);
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
+}
+
+.chutes-panel {
+	background: var(--chutes-surface-1);
+	border: var(--chutes-border-soft);
+	border-radius: var(--chutes-radius-lg);
+	backdrop-filter: blur(24px);
+	box-shadow: var(--chutes-shadow-glass);
+}
+
+.chutes-panel--raised {
+	background: var(--chutes-surface-2);
+}
+
+.chutes-chip {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.5rem;
+	padding: 0.35rem 0.8rem;
+	border-radius: var(--chutes-radius-pill);
+	border: 1px solid rgba(255, 255, 255, 0.08);
+	font-family: var(--chutes-font-display);
+	font-size: 0.875rem;
+	line-height: 1;
+	text-decoration: none;
+}
+
+.chutes-chip--moss {
+	background: var(--chutes-moss);
+	border-color: var(--chutes-moss);
+	color: var(--chutes-ink-900);
+}
+
+.chutes-chip--soft {
+	background: rgba(139, 255, 198, 0.1);
+	border-color: rgba(139, 255, 198, 0.2);
+	color: var(--chutes-moss);
+}
+
+.chutes-chip--papaya {
+	background: rgba(255, 171, 150, 0.1);
+	border-color: rgba(255, 171, 150, 0.24);
+	color: var(--chutes-papaya);
+}
+
+.chutes-button {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.5rem;
+	min-height: 2.75rem;
+	padding: 0.75rem 1.2rem;
+	border-radius: var(--chutes-radius-pill);
+	border: 1px solid transparent;
+	background: var(--chutes-primary);
+	color: var(--chutes-primary-foreground);
+	font-family: var(--chutes-font-display);
+	font-size: 0.95rem;
+	font-weight: 600;
+	line-height: 1;
+	text-decoration: none;
+	transition:
+		background-color 180ms ease,
+		border-color 180ms ease,
+		color 180ms ease,
+		transform 180ms ease,
+		box-shadow 180ms ease;
+}
+
+.chutes-button:hover {
+	transform: translateY(-1px);
+}
+
+.chutes-button--outline {
+	background: transparent;
+	border-color: rgba(255, 255, 255, 0.14);
+	color: var(--chutes-ink-200);
+}
+
+.chutes-button--moss {
+	background: rgba(139, 255, 198, 0.18);
+	border-color: rgba(139, 255, 198, 0.4);
+	color: var(--chutes-moss);
+}
+
+.chutes-button--papaya {
+	background: rgba(255, 171, 150, 0.18);
+	border-color: rgba(255, 171, 150, 0.35);
+	color: var(--chutes-papaya);
+}
+
+.chutes-input {
+	width: 100%;
+	min-height: 3rem;
+	padding: 0.85rem 1.1rem;
+	border-radius: 1rem;
+	border: var(--chutes-border-soft);
+	background: rgba(217, 217, 217, 0.1);
+	color: var(--chutes-foreground);
+	font-family: var(--chutes-font-display);
+	font-size: 0.95rem;
+}
+
+.chutes-input::placeholder {
+	color: var(--chutes-muted-foreground);
+}
+
+.chutes-input:focus {
+	outline: none;
+	border-color: rgba(139, 255, 198, 0.35);
+	box-shadow: 0 0 0 1px rgba(139, 255, 198, 0.22);
+}
+
+.chutes-code {
+	margin: 0;
+	padding: 1rem 1.1rem;
+	border-radius: 1rem;
+	border: var(--chutes-border-soft);
+	background: var(--chutes-ink-900);
+	color: #d4d4d4;
+	font-family: var(--chutes-font-mono);
+	font-size: 0.875rem;
+	line-height: 1.55;
+	overflow: auto;
+}
+
+.chutes-stat {
+	padding: 1.2rem;
+	border-radius: 1rem;
+	border: var(--chutes-border-soft);
+	background: rgba(21, 21, 21, 0.72);
+}
+
+.chutes-stat__label {
+	margin: 0 0 0.45rem;
+	color: var(--chutes-ink-300);
+	font-family: var(--chutes-font-body);
+	font-size: 0.92rem;
+}
+
+.chutes-stat__value {
+	margin: 0;
+	color: var(--chutes-moss);
+	font-family: var(--chutes-font-display);
+	font-size: 2rem;
+	line-height: 1;
+}
+
+.chutes-stat__hint {
+	margin: 0.45rem 0 0;
+	color: var(--chutes-ink-300);
+	font-family: var(--chutes-font-body);
+	font-size: 0.84rem;
+}
+
+::selection {
+	background: var(--chutes-selection-bg);
+	color: var(--chutes-selection-fg);
+}
+
+::-moz-selection {
+	background: var(--chutes-selection-bg);
+	color: var(--chutes-selection-fg);
+}

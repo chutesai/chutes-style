@@ -1,0 +1,203 @@
+{
+  "name": "Chutes",
+  "derivedFrom": "chutes-web",
+  "capturedOn": "2026-04-02",
+  "designDirection": [
+    "dark-first",
+    "cinematic",
+    "developer-first",
+    "glass surfaces",
+    "single-accent emphasis"
+  ],
+  "fonts": {
+    "display": {
+      "name": "Tomato Grotesk",
+      "role": "headlines, nav, CTA, product labels",
+      "files": [
+        "../chutes-web/static/cdn/fonts/Tomato/Tomato Grotesk Light.woff2",
+        "../chutes-web/static/cdn/fonts/Tomato/Tomato Grotesk Light Slanted.woff2",
+        "../chutes-web/static/cdn/fonts/Tomato/Tomato Grotesk Regular.woff2",
+        "../chutes-web/static/cdn/fonts/Tomato/Tomato Grotesk Regular Slanted.woff2",
+        "../chutes-web/static/cdn/fonts/Tomato/Tomato Grotesk Semibold.woff2"
+      ]
+    },
+    "body": {
+      "name": "Neue Haas Unica",
+      "role": "paragraphs, support copy, longer reading surfaces",
+      "files": [
+        "../chutes-web/static/cdn/fonts/NeueHaas/NeueHaasUnicaW1G-Light.woff2",
+        "../chutes-web/static/cdn/fonts/NeueHaas/NeueHaasUnicaW1G-LightIt.woff2",
+        "../chutes-web/static/cdn/fonts/NeueHaas/NeueHaasUnicaW1G-Regular.woff2",
+        "../chutes-web/static/cdn/fonts/NeueHaas/NeueHaasUnicaW1G-Medium.woff2",
+        "../chutes-web/static/cdn/fonts/NeueHaas/NeueHaasUnicaW1G-MediumIt.woff2"
+      ]
+    },
+    "mono": {
+      "name": "JetBrains Mono Nerd Font",
+      "role": "code, terminals, data labels, snippets",
+      "files": [
+        "../chutes-web/static/cdn/fonts/JetBrainsMonoNLNerdFont-Regular.woff2"
+      ]
+    },
+    "availableButNotPrimary": [
+      {
+        "name": "Power Grotesk",
+        "reason": "Font files exist, but the current font-power utility points at Tomato Grotesk."
+      },
+      {
+        "name": "Season Mix",
+        "reason": "Token exists in app.css, but there is no loaded @font-face."
+      },
+      {
+        "name": "Commit Mono",
+        "reason": "Naming exists, but the actually loaded mono face is JetBrains Mono Nerd Font."
+      }
+    ]
+  },
+  "colors": {
+    "semantic": {
+      "background": "hsl(0 0% 5%)",
+      "foreground": "hsl(0 0% 98%)",
+      "muted": "hsl(0 0% 14.9%)",
+      "mutedForeground": "hsl(0 0% 63.9%)",
+      "card": "hsl(0 0% 9%)",
+      "cardForeground": "hsl(0 0% 98%)",
+      "border": "hsl(0 0% 14.9%)",
+      "input": "hsl(0 0% 14.9%)",
+      "primary": "hsl(0 0% 98%)",
+      "primaryForeground": "hsl(0 0% 9%)",
+      "secondary": "hsl(0 0% 14.9%)",
+      "secondaryForeground": "hsl(0 0% 98%)",
+      "destructive": "hsl(0 84.2% 60.2%)"
+    },
+    "brand": {
+      "moss": "#8BFFC6",
+      "mossSoft": "#CDEEB5",
+      "mossDark": "#2A2D27",
+      "papaya": "#FFAB96",
+      "papayaDark": "#3A231E",
+      "mountain": "#B4C1EE",
+      "darkMountain": "#22232A",
+      "mango": "#E3EC9F",
+      "mangoDark": "#2A2F1D",
+      "banana": "#FFE551",
+      "rayonlabs": "#FFACA3",
+      "ether": "#88FFB7",
+      "pro": "#FFD9A7"
+    },
+    "ink": {
+      "900": "#0C0C0C",
+      "800": "#121212",
+      "700": "#151515",
+      "600": "#292929",
+      "500": "#343434",
+      "400": "#4A4A4A",
+      "300": "#9C9C9C",
+      "200": "#C4C4C4",
+      "100": "#E0E0E0"
+    },
+    "gradient": {
+      "brandHighlight": "linear-gradient(135deg, #8BFFC6 0%, #FDA4AF 60%, #6366F1 100%)"
+    }
+  },
+  "radii": {
+    "baseToken": "0.5rem",
+    "common": {
+      "pill": "999px",
+      "control": "10px",
+      "card": "16px",
+      "featurePanel": "24px"
+    }
+  },
+  "motion": {
+    "ambient": [
+      "slow looping hero videos",
+      "glass blur overlays",
+      "marquee text",
+      "subtle spin and hue rotation"
+    ],
+    "tokens": {
+      "scrollX": "20s linear infinite",
+      "hueRotate": "12s linear infinite",
+      "parachuteFall": "3s ease-out",
+      "parachuteFallSlow": "10s ease-in-out",
+      "spinSlow": "3s linear infinite"
+    }
+  },
+  "components": {
+    "buttons": {
+      "default": "bright fill, dark text, pill radius",
+      "outline": "transparent fill, muted border, light text",
+      "moss": "soft green fill, green border, green text",
+      "papaya": "soft papaya fill, papaya border, papaya text"
+    },
+    "surfaces": {
+      "page": "ink-900 or ink-800",
+      "panel": "dark translucent surface with soft border",
+      "hero": "large radius container with motion background",
+      "card": "rounded-xl or rounded-2xl with light border"
+    },
+    "badges": {
+      "launch": "solid moss pill",
+      "status": "moss/10 chip with moss text",
+      "secondary": "papaya or ink variant"
+    },
+    "forms": {
+      "fields": "tall rounded controls with translucent gray fill",
+      "focus": "subtle moss ring"
+    }
+  },
+  "logos": {
+    "primaryMark": "../chutes-web/src/lib/components/icons/ChutesFlat.svelte",
+    "secondaryMark": "../chutes-web/static/cdn/chutes/chutesblock.webp",
+    "favicon": "../chutes-web/static/favicon.png"
+  },
+  "icons": {
+    "utility": "@lucide/svelte",
+    "custom": "../chutes-web/src/lib/components/icons",
+    "providerComponents": "../chutes-web/src/lib/components/icons/providers",
+    "providerLogoWall": "../chutes-web/static/images/logos/bw"
+  },
+  "assetFamilies": {
+    "heroMotion": [
+      "../chutes-web/static/images/testnew.mp4",
+      "../chutes-web/static/images/hero-poster.webp",
+      "../chutes-web/static/images/decentracube.mp4",
+      "../chutes-web/static/images/platformdecentracubeposter.webp",
+      "../chutes-web/static/images/fallingcubes.mp4",
+      "../chutes-web/static/images/fallingchute-poster.webp"
+    ],
+    "partnerLogos": [
+      "../chutes-web/static/images/logos/openrouter.png",
+      "../chutes-web/static/images/logos/cline.png",
+      "../chutes-web/static/images/logos/kilo.png",
+      "../chutes-web/static/images/logos/roocode.png",
+      "../chutes-web/static/images/logos/fetchai.webp",
+      "../chutes-web/static/images/logos/deepfakeai.png"
+    ],
+    "providerLogos": [
+      "../chutes-web/static/images/logos/bw/deepseek.png",
+      "../chutes-web/static/images/logos/bw/openai.png",
+      "../chutes-web/static/images/logos/bw/mistralai.png",
+      "../chutes-web/static/images/logos/bw/qwen.png",
+      "../chutes-web/static/images/logos/bw/microsoft.png",
+      "../chutes-web/static/images/logos/bw/gemma.png",
+      "../chutes-web/static/images/logos/bw/templar.png",
+      "../chutes-web/static/images/logos/bw/kimik2.png"
+    ],
+    "photography": [
+      "../chutes-web/static/images/hyperscale/devs.jpg",
+      "../chutes-web/static/images/hyperscale/hyperfast.jpg",
+      "../chutes-web/static/images/hyperscale/decentralised.jpg",
+      "../chutes-web/static/images/team"
+    ],
+    "shareCards": [
+      "../chutes-web/static/cdn/chutes-seo"
+    ]
+  },
+  "notes": [
+    "The repo currently carries both bright moss and a softer legacy moss.",
+    "Use moss sparingly but decisively for active state and emphasis.",
+    "Keep gradients for hero moments rather than everyday UI."
+  ]
+}
