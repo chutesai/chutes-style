@@ -121,9 +121,15 @@ video {
 
 .hero-links a {
 	text-decoration: none;
+	transition: color 180ms ease;
 }
 
 .hero-links a:hover {
+	color: var(--chutes-moss);
+}
+
+.hero-links a:focus-visible {
+	outline: none;
 	color: var(--chutes-moss);
 }
 
@@ -238,6 +244,11 @@ video {
 	border-radius: 22px;
 	background: rgba(255, 255, 255, 0.03);
 	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.02);
+	transition:
+		border-color 180ms ease,
+		background-color 180ms ease,
+		transform 180ms ease,
+		box-shadow 180ms ease;
 }
 
 .pillar-card,
@@ -726,6 +737,10 @@ video {
 	border-radius: 18px;
 	border: var(--chutes-border-soft);
 	background: rgba(255, 255, 255, 0.02);
+	transition:
+		border-color 180ms ease,
+		background-color 180ms ease,
+		transform 180ms ease;
 }
 
 .asset-chip img {
@@ -733,6 +748,9 @@ video {
 	max-height: 34px;
 	object-fit: contain;
 	filter: brightness(1.05);
+	transition:
+		transform 220ms ease,
+		filter 220ms ease;
 }
 
 .media-grid {
@@ -755,6 +773,7 @@ video {
 	height: 240px;
 	object-fit: cover;
 	background: var(--chutes-ink-800);
+	transition: transform 280ms ease;
 }
 
 .media-stage {
@@ -847,6 +866,7 @@ video {
 		radial-gradient(circle at 50% 100%, rgba(99, 102, 241, 0.25) 0%, rgba(99, 102, 241, 0) 42%),
 		radial-gradient(circle at 15% 20%, rgba(139, 255, 198, 0.08) 0%, rgba(139, 255, 198, 0) 32%),
 		var(--chutes-ink-800);
+	transition: transform 280ms ease;
 }
 
 .campaign-grid {
@@ -864,6 +884,51 @@ video {
 
 .media-meta p {
 	font-size: 0.92rem;
+}
+
+@media (hover: hover) and (pointer: fine) {
+	.pillar-card:hover,
+	.expression-card:hover,
+	.scene-card:hover,
+	.type-card:hover,
+	.ui-card:hover,
+	.logo-card:hover,
+	.logo-wall-card:hover,
+	.logo-system-card:hover,
+	.shell-card:hover,
+	.controls-card:hover,
+	.system-panel:hover,
+	.media-card:hover,
+	.campaign-card:hover {
+		transform: translateY(-2px);
+		border-color: rgba(255, 255, 255, 0.14);
+		background: rgba(255, 255, 255, 0.045);
+	}
+
+	.asset-chip:hover {
+		transform: translateY(-2px);
+		border-color: rgba(255, 255, 255, 0.16);
+		background: rgba(255, 255, 255, 0.05);
+	}
+
+	.asset-chip:hover img {
+		transform: scale(1.03);
+		filter: brightness(1.12);
+	}
+
+	.media-card:hover img,
+	.media-card:hover video {
+		transform: scale(1.03);
+	}
+
+	.media-card--scroll:hover [data-scroll-frame] {
+		transform:
+			perspective(1400px)
+			translateY(var(--scroll-shift-y))
+			rotateX(var(--scroll-rotate-x))
+			rotateY(var(--scroll-rotate-y))
+			scale(1.045);
+	}
 }
 
 .footer-note {
