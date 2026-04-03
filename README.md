@@ -11,22 +11,6 @@ This directory is now a self-contained brand package distilled from `chutes-web/
 - Pull structured values from `chutes-tokens.json` for tooling, design prompts, or code generation.
 - Use `ASSETS.md` and `ICONS.md` to find the packaged files quickly.
 
-## Local Preview
-
-From the project root:
-
-```bash
-cd chutes-style
-npm run preview
-```
-
-Notes:
-
-- The server is zero-dependency and uses Node's built-in `http` module.
-- `/` serves `index.html` automatically.
-- You can change the port with `PORT=4321 npm run preview`.
-- `npm run dev` works too and points to the same preview server.
-
 ## Package Map
 
 - `BRAND_GUIDE.md`: full brand guidance, usage rules, and implementation notes
@@ -66,5 +50,17 @@ This package was reconstructed from the live implementation in:
 ## Snapshot
 
 Generated from `index.html`.
+
+To stand up the page locally:
+
+```bash
+cd chutes-style
+npm run preview
+```
+
+- The server is zero-dependency and uses Node's built-in `http` module.
+- `/` serves `index.html` automatically.
+- You can change the port with `PORT=4321 npm run preview`.
+- `npm run dev` works too and points to the same preview server.
 
 ![Chutes brand board snapshot](./preview-snapshot.png)

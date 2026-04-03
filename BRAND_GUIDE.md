@@ -279,7 +279,7 @@ Primary implementation files to reuse:
 
 - `./chutes-tokens.css`
 - `./chutes-tokens.json`
-- `./preview.html`
+- `./index.html`
 - `./ASSETS.md`
 - `./ICONS.md`
 
