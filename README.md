@@ -43,3 +43,9 @@ This package was reconstructed from the live implementation in:
 - `Season Mix` is named in tokens but is not actually shipped as a loaded web font.
 - `Commit Mono` appears in naming, but the live mono face is `JetBrains Mono Nerd Font`.
 - `moss` exists in both a bright and softer legacy form in the repo. This package treats bright moss as the main accent and keeps the softer green as a supporting tint.
+
+## Snapshot
+
+Generated from `preview.html`.
+
+![Chutes brand board snapshot](./preview-snapshot.png)
