@@ -11,8 +11,9 @@ The Chutes icon system is split between Lucide for generic UI actions and local 
 
 Use Lucide when the concept is universal and does not need Chutes-specific branding.
 
-## Core Brand and Product Icons
+## Core Brand And Product Icons
 
+- Local packaged source: `./assets/icon-source/`
 - Brand: `Chutes.svelte`, `ChutesFlat.svelte`
 - Navigation/product: `API.svelte`, `Graphs.svelte`, `Home.svelte`, `Model.svelte`, `MyChute.svelte`, `News.svelte`, `Roadmap.svelte`, `SDK.svelte`, `Document.svelte`
 - Platform/system: `Server.svelte`, `CPU.svelte`, `Jobs.svelte`, `Deploy.svelte`, `LockOutline.svelte`, `Coins.svelte`, `Payments.svelte`, `Card.svelte`, `Logs.svelte`, `Leaderboard.svelte`
@@ -20,7 +21,7 @@ Use Lucide when the concept is universal and does not need Chutes-specific brand
 
 Use these when the icon needs to feel native to the Chutes ecosystem rather than generic software UI.
 
-## Model and Modality Icons
+## Model And Modality Icons
 
 - `Chat.svelte`
 - `Image.svelte`
@@ -35,7 +36,7 @@ Use these when the icon needs to feel native to the Chutes ecosystem rather than
 
 These are the clearest choice for product cards, filters, model chips, and capability callouts.
 
-## Social, Community, and Ecosystem Icons
+## Social, Community, And Ecosystem Icons
 
 - `Discord.svelte`
 - `Github.svelte`
@@ -48,20 +49,20 @@ These are the clearest choice for product cards, filters, model chips, and capab
 
 Component icons:
 
-- `providers/OpenAI.svelte`
-- `providers/Deepseek.svelte`
-- `providers/Kimi.svelte`
-- `providers/Microsoft.svelte`
-- `providers/Mistral.svelte`
-- `providers/Qwen.svelte`
-- `providers/Templar.svelte`
-- `providers/ZAI.svelte`
+- `./assets/icon-source/providers/OpenAI.svelte`
+- `./assets/icon-source/providers/Deepseek.svelte`
+- `./assets/icon-source/providers/Kimi.svelte`
+- `./assets/icon-source/providers/Microsoft.svelte`
+- `./assets/icon-source/providers/Mistral.svelte`
+- `./assets/icon-source/providers/Qwen.svelte`
+- `./assets/icon-source/providers/Templar.svelte`
+- `./assets/icon-source/providers/ZAI.svelte`
 
 Raster provider logo wall:
 
-- `../chutes-web/static/images/logos/bw/*`
+- `./assets/logos/providers-bw/*`
 
-## Color and State Rules
+## Color And State Rules
 
 - Default on dark surfaces: white or `ink-300`
 - Hover/active state: moss
@@ -82,3 +83,9 @@ Raster provider logo wall:
 - Avoid combining thin stroke icons and thick filled icons in the same compact control row.
 - Use one visual language per module when possible.
 - Prefer custom icons for product taxonomy and Lucide for action verbs.
+
+## Packaging Notes
+
+- The custom icon source has been copied locally into `./assets/icon-source/` so the brand package does not depend on `chutes-web/`.
+- The brand mark SVGs themselves live in `./assets/brand/`.
+- Generic Lucide icons are not bundled here because they are an external dependency rather than a Chutes-owned asset.

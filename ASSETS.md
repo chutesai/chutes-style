@@ -1,89 +1,88 @@
 # Asset Guide
 
-This file is a curated shortlist of the visual assets already in `chutes-web/static` and the component-level brand marks already in `src/lib`.
+This package now includes local copies of the brand-critical assets inside `./assets/`.
 
 ## Core Brand Assets
 
-- Primary vector mark: `../chutes-web/src/lib/components/icons/ChutesFlat.svelte`
-- Alternate block mark: `../chutes-web/static/cdn/chutes/chutesblock.webp`
-- Favicon: `../chutes-web/static/favicon.png`
-- Monospace wordmark variant: `../chutes-web/src/lib/components/views/global/ChutesLogo.svelte`
+- Primary flat mark, light: `./assets/brand/chutes-flat-light.svg`
+- Primary flat mark, dark: `./assets/brand/chutes-flat-dark.svg`
+- Alternate block mark: `./assets/brand/chutesblock.webp`
+- Favicon: `./assets/brand/favicon.png`
+- Social fallback art: `./assets/brand/chutes-opengraph.webp`
 
 ## Fonts
 
-- Display font files: `../chutes-web/static/cdn/fonts/Tomato/*`
-- Body font files: `../chutes-web/static/cdn/fonts/NeueHaas/*`
-- Mono font file: `../chutes-web/static/cdn/fonts/JetBrainsMonoNLNerdFont-Regular.woff2`
-- Optional but not currently primary: `../chutes-web/static/cdn/fonts/power/*`
+- Display font family: `./assets/fonts/Tomato/*`
+- Body font family: `./assets/fonts/NeueHaas/*`
+- Mono font file: `./assets/fonts/mono/JetBrainsMonoNLNerdFont-Regular.woff2`
+- Optional alternate display family: `./assets/fonts/power/*`
 
-## Hero and Motion Assets
+## Hero And Motion Assets
 
-- Homepage hero loop: `../chutes-web/static/images/testnew.mp4`
-- Homepage hero poster: `../chutes-web/static/images/hero-poster.webp`
-- Platform hero loop: `../chutes-web/static/images/decentracube.mp4`
-- Platform hero poster: `../chutes-web/static/images/platformdecentracubeposter.webp`
-- Ambient cubes loop: `../chutes-web/static/images/fallingcubes.mp4`
-- Ambient cubes poster: `../chutes-web/static/images/fallingchute-poster.webp`
-- Spinner and secondary motion loops: `../chutes-web/static/images/cubespinner2.mp4`, `../chutes-web/static/images/cubespinners.mp4`, `../chutes-web/static/images/newspinner.mp4`
+- Homepage hero loop: `./assets/media/hero/testnew.mp4`
+- Homepage hero poster: `./assets/media/hero/hero-poster.webp`
+- Platform hero loop: `./assets/media/hero/decentracube.mp4`
+- Platform hero poster: `./assets/media/hero/platformdecentracubeposter.webp`
+- Ambient cubes loop: `./assets/media/ambient/fallingcubes.mp4`
+- Ambient cubes poster: `./assets/media/ambient/fallingchute-poster.webp`
+- Additional ambient loops: `./assets/media/ambient/cubespinner2.mp4`, `./assets/media/ambient/cubespinners.mp4`, `./assets/media/ambient/newspinner.mp4`
 
-## Photography and Editorial Images
+## Photography And Editorial Images
 
-- Hyperscale triptych: `../chutes-web/static/images/hyperscale/devs.jpg`, `../chutes-web/static/images/hyperscale/hyperfast.jpg`, `../chutes-web/static/images/hyperscale/decentralised.jpg`
-- Team photos: `../chutes-web/static/images/team/*`
-- Platform/product stills: `../chutes-web/static/images/platformscreen.jpg`, `../chutes-web/static/images/platform-screenie.webp`, `../chutes-web/static/images/research-graphic.webp`
-- Audio/video/model showcase stills: `../chutes-web/static/images/imagemodels.webp`, `../chutes-web/static/images/moviemodels.webp`, `../chutes-web/static/images/voicemodels.webp`, `../chutes-web/static/images/musicmodels.webp`
+- Hyperscale triptych: `./assets/images/hyperscale/devs.jpg`, `./assets/images/hyperscale/hyperfast.jpg`, `./assets/images/hyperscale/decentralised.jpg`
+- Platform and product stills: `./assets/images/product/platformscreen.jpg`, `./assets/images/product/platform-screenie.webp`, `./assets/images/product/research-graphic.webp`
+- Model showcase stills: `./assets/images/product/imagemodels.webp`, `./assets/images/product/moviemodels.webp`, `./assets/images/product/voicemodels.webp`, `./assets/images/product/musicmodels.webp`
 
-## Product and Pricing Card Art
+## Product And Pricing Card Art
 
-- Plan cards: `../chutes-web/static/images/base-card.webp`, `../chutes-web/static/images/plus-card.webp`, `../chutes-web/static/images/pro-card.webp`, `../chutes-web/static/images/enterprise-card.webp`, `../chutes-web/static/images/free-card.webp`
-- General fallback/product art: `../chutes-web/static/images/flexchutes.webp`, `../chutes-web/static/images/chutesblocks.webp`, `../chutes-web/static/images/chuter3.webp`
+- Plan cards: `./assets/images/cards/base-card.webp`, `./assets/images/cards/plus-card.webp`, `./assets/images/cards/pro-card.webp`, `./assets/images/cards/enterprise-card.webp`, `./assets/images/cards/free-card.webp`
+- General fallback/product art: `./assets/images/cards/flexchutes.webp`, `./assets/images/cards/chutesblocks.webp`, `./assets/images/cards/chuter3.webp`
 
 ## Partner Logos
 
-- `../chutes-web/static/images/logos/openrouter.png`
-- `../chutes-web/static/images/logos/cline.png`
-- `../chutes-web/static/images/logos/kilo.png`
-- `../chutes-web/static/images/logos/roocode.png`
-- `../chutes-web/static/images/logos/fetchai.webp`
-- `../chutes-web/static/images/logos/deepfakeai.png`
+- `./assets/logos/partners/openrouter.png`
+- `./assets/logos/partners/cline.png`
+- `./assets/logos/partners/kilo.png`
+- `./assets/logos/partners/roocode.png`
+- `./assets/logos/partners/fetchai.webp`
+- `./assets/logos/partners/deepfakeai.png`
 
-These are used in curated logo bands and usually sit on dark, blurred, semi-transparent containers.
+These are best used in curated logo bands on softened dark surfaces.
 
 ## Provider Logos
 
-- Black-and-white landing-page band: `../chutes-web/static/images/logos/bw/*`
-- Dynamic model/provider logos: `../chutes-web/static/cdn/chutes/logos/*`
+- Grayscale provider wall: `./assets/logos/providers-bw/*`
+- Color provider/model logos: `./assets/logos/providers-color/*`
 
-Use the black-and-white set for clean provider walls and the CDN set for model cards or richer content where brand recognition matters more than uniformity.
+Use the grayscale set for clean provider walls and the color set for model cards or richer brand-recognition moments.
 
-## SEO and Social Share Cards
+## Social Share Cards
 
-- Global defaults: `../chutes-web/static/cdn/chutes-seo/standard-opengraph.jpg`, `../chutes-web/static/cdn/chutes-seo/twitter-opengraph.jpg`
-- Page-specific share cards: `../chutes-web/static/cdn/chutes-seo/*`
-- Chutes-specific OG image: `../chutes-web/static/cdn/chutes/chutes-opengraph.webp`
+- Global defaults: `./assets/social/standard-opengraph.jpg`, `./assets/social/twitter-opengraph.jpg`
+- Page-specific variants: `./assets/social/*`
 
-## News and Editorial Media
+## Icon Source
 
-- Embedded news visuals: `../chutes-web/static/cdn/chutes/news/*`
+- Full custom icon bundle: `./assets/icon-source/*`
+- Provider icon source: `./assets/icon-source/providers/*`
 
-## Recommended Asset Shortlist For New Work
+## Recommended Starter Bundle For New Work
 
-- `ChutesFlat.svelte`
-- `favicon.png`
-- `cdn/chutes/chutesblock.webp`
-- `images/testnew.mp4` with `images/hero-poster.webp`
-- `images/decentracube.mp4` with `images/platformdecentracubeposter.webp`
-- `images/fallingcubes.mp4` with `images/fallingchute-poster.webp`
-- `images/logos/bw/*`
-- `images/logos/openrouter.png`, `cline.png`, `fetchai.webp`, `roocode.png`
-- `images/hyperscale/*`
-- `images/platformscreen.jpg`
-- `cdn/chutes-seo/*`
+- `./assets/brand/chutes-flat-light.svg`
+- `./assets/brand/chutesblock.webp`
+- `./assets/brand/favicon.png`
+- `./assets/fonts/Tomato/*`
+- `./assets/fonts/NeueHaas/*`
+- `./assets/fonts/mono/JetBrainsMonoNLNerdFont-Regular.woff2`
+- `./assets/media/hero/testnew.mp4` with `./assets/media/hero/hero-poster.webp`
+- `./assets/media/hero/decentracube.mp4` with `./assets/media/hero/platformdecentracubeposter.webp`
+- `./assets/media/ambient/fallingcubes.mp4` with `./assets/media/ambient/fallingchute-poster.webp`
+- `./assets/logos/providers-bw/*`
+- `./assets/logos/partners/*`
+- `./assets/images/hyperscale/*`
+- `./assets/images/product/platformscreen.jpg`
+- `./assets/social/*`
 
-## Usage Notes
+## Intentionally Not Expanded Further
 
-- Put motion assets behind a dark overlay or gradient wash.
-- Pair colorful partner logos with blur and low-contrast surfaces.
-- Use grayscale provider marks when you need uniformity.
-- Use rounded containers and soft borders around screenshots and stills.
-- Keep the asset set selective. Chutes feels stronger when each page uses a small number of memorable visuals rather than many unrelated ones.
+This package focuses on brand-critical assets rather than every content-specific site image. Team portraits, news-specific imagery, and other editorial one-offs were left out on purpose so the package stays useful as a brand system instead of becoming a full static-site dump.

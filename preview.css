@@ -126,6 +126,11 @@ a {
 	height: auto;
 }
 
+.brand-mark img {
+	width: 44px;
+	height: auto;
+}
+
 .eyebrow {
 	margin: 0 0 12px;
 	font-family: var(--chutes-font-display);
@@ -316,6 +321,11 @@ a {
 	width: 40px;
 	height: auto;
 	color: white;
+}
+
+.wordmark img {
+	width: 40px;
+	height: auto;
 }
 
 .block-mark,

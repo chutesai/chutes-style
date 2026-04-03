@@ -2,6 +2,8 @@
   "name": "Chutes",
   "derivedFrom": "chutes-web",
   "capturedOn": "2026-04-02",
+  "selfContained": true,
+  "assetsRoot": "./assets",
   "designDirection": [
     "dark-first",
     "cinematic",
@@ -14,35 +16,35 @@
       "name": "Tomato Grotesk",
       "role": "headlines, nav, CTA, product labels",
       "files": [
-        "../chutes-web/static/cdn/fonts/Tomato/Tomato Grotesk Light.woff2",
-        "../chutes-web/static/cdn/fonts/Tomato/Tomato Grotesk Light Slanted.woff2",
-        "../chutes-web/static/cdn/fonts/Tomato/Tomato Grotesk Regular.woff2",
-        "../chutes-web/static/cdn/fonts/Tomato/Tomato Grotesk Regular Slanted.woff2",
-        "../chutes-web/static/cdn/fonts/Tomato/Tomato Grotesk Semibold.woff2"
+        "./assets/fonts/Tomato/Tomato Grotesk Light.woff2",
+        "./assets/fonts/Tomato/Tomato Grotesk Light Slanted.woff2",
+        "./assets/fonts/Tomato/Tomato Grotesk Regular.woff2",
+        "./assets/fonts/Tomato/Tomato Grotesk Regular Slanted.woff2",
+        "./assets/fonts/Tomato/Tomato Grotesk Semibold.woff2"
       ]
     },
     "body": {
       "name": "Neue Haas Unica",
       "role": "paragraphs, support copy, longer reading surfaces",
       "files": [
-        "../chutes-web/static/cdn/fonts/NeueHaas/NeueHaasUnicaW1G-Light.woff2",
-        "../chutes-web/static/cdn/fonts/NeueHaas/NeueHaasUnicaW1G-LightIt.woff2",
-        "../chutes-web/static/cdn/fonts/NeueHaas/NeueHaasUnicaW1G-Regular.woff2",
-        "../chutes-web/static/cdn/fonts/NeueHaas/NeueHaasUnicaW1G-Medium.woff2",
-        "../chutes-web/static/cdn/fonts/NeueHaas/NeueHaasUnicaW1G-MediumIt.woff2"
+        "./assets/fonts/NeueHaas/NeueHaasUnicaW1G-Light.woff2",
+        "./assets/fonts/NeueHaas/NeueHaasUnicaW1G-LightIt.woff2",
+        "./assets/fonts/NeueHaas/NeueHaasUnicaW1G-Regular.woff2",
+        "./assets/fonts/NeueHaas/NeueHaasUnicaW1G-Medium.woff2",
+        "./assets/fonts/NeueHaas/NeueHaasUnicaW1G-MediumIt.woff2"
       ]
     },
     "mono": {
       "name": "JetBrains Mono Nerd Font",
       "role": "code, terminals, data labels, snippets",
       "files": [
-        "../chutes-web/static/cdn/fonts/JetBrainsMonoNLNerdFont-Regular.woff2"
+        "./assets/fonts/mono/JetBrainsMonoNLNerdFont-Regular.woff2"
       ]
     },
     "availableButNotPrimary": [
       {
         "name": "Power Grotesk",
-        "reason": "Font files exist, but the current font-power utility points at Tomato Grotesk."
+        "reason": "Font files are bundled locally, but the current font-power utility in the source app points at Tomato Grotesk."
       },
       {
         "name": "Season Mix",
@@ -148,54 +150,76 @@
     }
   },
   "logos": {
-    "primaryMark": "../chutes-web/src/lib/components/icons/ChutesFlat.svelte",
-    "secondaryMark": "../chutes-web/static/cdn/chutes/chutesblock.webp",
-    "favicon": "../chutes-web/static/favicon.png"
+    "primaryMarkLight": "./assets/brand/chutes-flat-light.svg",
+    "primaryMarkDark": "./assets/brand/chutes-flat-dark.svg",
+    "secondaryMark": "./assets/brand/chutesblock.webp",
+    "favicon": "./assets/brand/favicon.png",
+    "opengraphFallback": "./assets/brand/chutes-opengraph.webp",
+    "componentSource": "./assets/icon-source/ChutesFlat.svelte"
   },
   "icons": {
     "utility": "@lucide/svelte",
-    "custom": "../chutes-web/src/lib/components/icons",
-    "providerComponents": "../chutes-web/src/lib/components/icons/providers",
-    "providerLogoWall": "../chutes-web/static/images/logos/bw"
+    "custom": "./assets/icon-source",
+    "providerComponents": "./assets/icon-source/providers",
+    "providerLogoWall": "./assets/logos/providers-bw"
   },
   "assetFamilies": {
     "heroMotion": [
-      "../chutes-web/static/images/testnew.mp4",
-      "../chutes-web/static/images/hero-poster.webp",
-      "../chutes-web/static/images/decentracube.mp4",
-      "../chutes-web/static/images/platformdecentracubeposter.webp",
-      "../chutes-web/static/images/fallingcubes.mp4",
-      "../chutes-web/static/images/fallingchute-poster.webp"
+      "./assets/media/hero/testnew.mp4",
+      "./assets/media/hero/hero-poster.webp",
+      "./assets/media/hero/decentracube.mp4",
+      "./assets/media/hero/platformdecentracubeposter.webp",
+      "./assets/media/ambient/fallingcubes.mp4",
+      "./assets/media/ambient/fallingchute-poster.webp"
     ],
     "partnerLogos": [
-      "../chutes-web/static/images/logos/openrouter.png",
-      "../chutes-web/static/images/logos/cline.png",
-      "../chutes-web/static/images/logos/kilo.png",
-      "../chutes-web/static/images/logos/roocode.png",
-      "../chutes-web/static/images/logos/fetchai.webp",
-      "../chutes-web/static/images/logos/deepfakeai.png"
+      "./assets/logos/partners/openrouter.png",
+      "./assets/logos/partners/cline.png",
+      "./assets/logos/partners/kilo.png",
+      "./assets/logos/partners/roocode.png",
+      "./assets/logos/partners/fetchai.webp",
+      "./assets/logos/partners/deepfakeai.png"
     ],
     "providerLogos": [
-      "../chutes-web/static/images/logos/bw/deepseek.png",
-      "../chutes-web/static/images/logos/bw/openai.png",
-      "../chutes-web/static/images/logos/bw/mistralai.png",
-      "../chutes-web/static/images/logos/bw/qwen.png",
-      "../chutes-web/static/images/logos/bw/microsoft.png",
-      "../chutes-web/static/images/logos/bw/gemma.png",
-      "../chutes-web/static/images/logos/bw/templar.png",
-      "../chutes-web/static/images/logos/bw/kimik2.png"
+      "./assets/logos/providers-bw/deepseek.png",
+      "./assets/logos/providers-bw/openai.png",
+      "./assets/logos/providers-bw/mistralai.png",
+      "./assets/logos/providers-bw/qwen.png",
+      "./assets/logos/providers-bw/microsoft.png",
+      "./assets/logos/providers-bw/gemma.png",
+      "./assets/logos/providers-bw/templar.png",
+      "./assets/logos/providers-bw/kimik2.png"
     ],
     "photography": [
-      "../chutes-web/static/images/hyperscale/devs.jpg",
-      "../chutes-web/static/images/hyperscale/hyperfast.jpg",
-      "../chutes-web/static/images/hyperscale/decentralised.jpg",
-      "../chutes-web/static/images/team"
+      "./assets/images/hyperscale/devs.jpg",
+      "./assets/images/hyperscale/hyperfast.jpg",
+      "./assets/images/hyperscale/decentralised.jpg"
     ],
     "shareCards": [
-      "../chutes-web/static/cdn/chutes-seo"
+      "./assets/social"
+    ],
+    "productStills": [
+      "./assets/images/product/platformscreen.jpg",
+      "./assets/images/product/platform-screenie.webp",
+      "./assets/images/product/research-graphic.webp",
+      "./assets/images/product/imagemodels.webp",
+      "./assets/images/product/moviemodels.webp",
+      "./assets/images/product/voicemodels.webp",
+      "./assets/images/product/musicmodels.webp"
+    ],
+    "cardArt": [
+      "./assets/images/cards/base-card.webp",
+      "./assets/images/cards/plus-card.webp",
+      "./assets/images/cards/pro-card.webp",
+      "./assets/images/cards/enterprise-card.webp",
+      "./assets/images/cards/free-card.webp",
+      "./assets/images/cards/flexchutes.webp",
+      "./assets/images/cards/chutesblocks.webp",
+      "./assets/images/cards/chuter3.webp"
     ]
   },
   "notes": [
+    "The package intentionally includes local asset copies so it remains portable.",
     "The repo currently carries both bright moss and a softer legacy moss.",
     "Use moss sparingly but decisively for active state and emphasis.",
     "Keep gradients for hero moments rather than everyday UI."

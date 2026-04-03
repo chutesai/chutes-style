@@ -1,11 +1,11 @@
 /*
  * Chutes design tokens extracted from chutes-web.
- * Paths are relative to this directory so the file can be used locally inside this repo.
+ * This package is self-contained and uses local asset copies under ./assets.
  */
 
 @font-face {
 	font-family: 'Tomato Grotesk';
-	src: url('../chutes-web/static/cdn/fonts/Tomato/Tomato%20Grotesk%20Semibold.woff2')
+	src: url('./assets/fonts/Tomato/Tomato%20Grotesk%20Semibold.woff2')
 		format('woff2');
 	font-weight: 600 900;
 	font-style: normal;
@@ -14,7 +14,7 @@
 
 @font-face {
 	font-family: 'Tomato Grotesk';
-	src: url('../chutes-web/static/cdn/fonts/Tomato/Tomato%20Grotesk%20Regular.woff2')
+	src: url('./assets/fonts/Tomato/Tomato%20Grotesk%20Regular.woff2')
 		format('woff2');
 	font-weight: 400;
 	font-style: normal;
@@ -23,7 +23,7 @@
 
 @font-face {
 	font-family: 'Tomato Grotesk';
-	src: url('../chutes-web/static/cdn/fonts/Tomato/Tomato%20Grotesk%20Regular%20Slanted.woff2')
+	src: url('./assets/fonts/Tomato/Tomato%20Grotesk%20Regular%20Slanted.woff2')
 		format('woff2');
 	font-weight: 400;
 	font-style: italic;
@@ -32,7 +32,7 @@
 
 @font-face {
 	font-family: 'Tomato Grotesk';
-	src: url('../chutes-web/static/cdn/fonts/Tomato/Tomato%20Grotesk%20Light.woff2')
+	src: url('./assets/fonts/Tomato/Tomato%20Grotesk%20Light.woff2')
 		format('woff2');
 	font-weight: 300;
 	font-style: normal;
@@ -41,7 +41,7 @@
 
 @font-face {
 	font-family: 'Tomato Grotesk';
-	src: url('../chutes-web/static/cdn/fonts/Tomato/Tomato%20Grotesk%20Light%20Slanted.woff2')
+	src: url('./assets/fonts/Tomato/Tomato%20Grotesk%20Light%20Slanted.woff2')
 		format('woff2');
 	font-weight: 300;
 	font-style: italic;
@@ -50,7 +50,7 @@
 
 @font-face {
 	font-family: 'Neue Haas Unica';
-	src: url('../chutes-web/static/cdn/fonts/NeueHaas/NeueHaasUnicaW1G-Regular.woff2')
+	src: url('./assets/fonts/NeueHaas/NeueHaasUnicaW1G-Regular.woff2')
 		format('woff2');
 	font-weight: 400;
 	font-style: normal;
@@ -59,7 +59,7 @@
 
 @font-face {
 	font-family: 'Neue Haas Unica';
-	src: url('../chutes-web/static/cdn/fonts/NeueHaas/NeueHaasUnicaW1G-Medium.woff2')
+	src: url('./assets/fonts/NeueHaas/NeueHaasUnicaW1G-Medium.woff2')
 		format('woff2');
 	font-weight: 500;
 	font-style: normal;
@@ -68,7 +68,7 @@
 
 @font-face {
 	font-family: 'Neue Haas Unica';
-	src: url('../chutes-web/static/cdn/fonts/NeueHaas/NeueHaasUnicaW1G-MediumIt.woff2')
+	src: url('./assets/fonts/NeueHaas/NeueHaasUnicaW1G-MediumIt.woff2')
 		format('woff2');
 	font-weight: 500;
 	font-style: italic;
@@ -77,7 +77,7 @@
 
 @font-face {
 	font-family: 'Neue Haas Unica';
-	src: url('../chutes-web/static/cdn/fonts/NeueHaas/NeueHaasUnicaW1G-Light.woff2')
+	src: url('./assets/fonts/NeueHaas/NeueHaasUnicaW1G-Light.woff2')
 		format('woff2');
 	font-weight: 300;
 	font-style: normal;
@@ -86,7 +86,7 @@
 
 @font-face {
 	font-family: 'Neue Haas Unica';
-	src: url('../chutes-web/static/cdn/fonts/NeueHaas/NeueHaasUnicaW1G-LightIt.woff2')
+	src: url('./assets/fonts/NeueHaas/NeueHaasUnicaW1G-LightIt.woff2')
 		format('woff2');
 	font-weight: 300;
 	font-style: italic;
@@ -95,9 +95,65 @@
 
 @font-face {
 	font-family: 'JetBrains Mono Nerd Font';
-	src: url('../chutes-web/static/cdn/fonts/JetBrainsMonoNLNerdFont-Regular.woff2')
+	src: url('./assets/fonts/mono/JetBrainsMonoNLNerdFont-Regular.woff2')
 		format('woff2');
 	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Power Grotesk';
+	src: url('./assets/fonts/power/PowerGrotesk-Regular.woff2') format('woff2');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Power Grotesk';
+	src: url('./assets/fonts/power/PowerGrotesk-Italic.woff2') format('woff2');
+	font-weight: 400;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Power Grotesk';
+	src: url('./assets/fonts/power/PowerGrotesk-Medium.woff2') format('woff2');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Power Grotesk';
+	src: url('./assets/fonts/power/PowerGrotesk-MediumItalic.woff2') format('woff2');
+	font-weight: 500;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Power Grotesk';
+	src: url('./assets/fonts/power/PowerGrotesk-Bold.woff2') format('woff2');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Power Grotesk';
+	src: url('./assets/fonts/power/PowerGrotesk-Heavy.woff2') format('woff2');
+	font-weight: 800;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Power Grotesk';
+	src: url('./assets/fonts/power/PowerGrotesk-Black.woff2') format('woff2');
+	font-weight: 900;
 	font-style: normal;
 	font-display: swap;
 }

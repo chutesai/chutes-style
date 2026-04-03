@@ -10,9 +10,10 @@
 		<div class="page">
 			<header class="hero chutes-panel">
 				<div class="hero-top">
-					<span class="chutes-chip chutes-chip--soft">Derived from chutes-web</span>
+					<span class="chutes-chip chutes-chip--soft">Derived from chutes-web, bundled locally</span>
 					<nav class="hero-links">
 						<a href="./README.md">Overview</a>
+						<a href="./BRAND_GUIDE.md">Brand Guide</a>
 						<a href="./ASSETS.md">Assets</a>
 						<a href="./ICONS.md">Icons</a>
 						<a href="./chutes-tokens.css">Tokens CSS</a>
@@ -22,16 +23,7 @@
 
 				<div class="hero-main brand-lockup">
 					<div class="brand-mark" aria-hidden="true">
-						<svg viewBox="0 0 62 41" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path
-								d="M38.01 39.6943C37.1263 41.1364 35.2525 41.4057 34.0442 40.2642L28.6738 35.1904C27.4656 34.049 27.4843 32.0273 28.7133 30.9115L34.1258 25.9979C40.1431 20.5352 48.069 18.406 55.6129 20.2255L59.6853 21.2078C59.8306 21.2428 59.9654 21.3165 60.0771 21.422C60.6663 21.9787 60.3364 23.0194 59.552 23.078L59.465 23.0845C52.0153 23.6409 45.1812 27.9913 40.9759 34.8542L38.01 39.6943Z"
-								fill="currentColor"
-							/>
-							<path
-								d="M15.296 36.5912C14.1726 37.8368 12.2763 37.7221 11.2913 36.349L0.547139 21.3709C-0.432786 20.0048 -0.0547272 18.0273 1.34794 17.1822L22.7709 4.27482C29.6029 0.158495 37.7319 -0.277291 44.8086 3.0934L60.3492 10.4956C60.5897 10.6101 60.7997 10.7872 60.9599 11.0106C61.8149 12.2025 60.8991 13.9056 59.5058 13.7148L50.2478 12.4467C42.8554 11.4342 35.4143 14.2848 30.1165 20.1587L15.296 36.5912Z"
-								fill="currentColor"
-							/>
-						</svg>
+						<img src="./assets/brand/chutes-flat-light.svg" alt="" />
 					</div>
 					<div>
 						<p class="eyebrow">Chutes visual system</p>
@@ -44,7 +36,7 @@
 							not ornamental.
 						</p>
 						<div class="hero-actions">
-							<a href="./README.md" class="chutes-button">Core guidance</a>
+							<a href="./BRAND_GUIDE.md" class="chutes-button">Core guidance</a>
 							<a href="./ASSETS.md" class="chutes-button chutes-button--outline">Asset shortlist</a>
 							<span class="chutes-chip chutes-chip--moss">Moss for action</span>
 							<span class="chutes-chip chutes-chip--papaya">Warm alternate accent</span>
@@ -196,16 +188,7 @@ const result = await client.chat.create({ model: "deepseek", prompt: "hello" });
 					<div class="logo-card">
 						<h3>Primary mark</h3>
 						<div class="wordmark">
-							<svg viewBox="0 0 62 41" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path
-									d="M38.01 39.6943C37.1263 41.1364 35.2525 41.4057 34.0442 40.2642L28.6738 35.1904C27.4656 34.049 27.4843 32.0273 28.7133 30.9115L34.1258 25.9979C40.1431 20.5352 48.069 18.406 55.6129 20.2255L59.6853 21.2078C59.8306 21.2428 59.9654 21.3165 60.0771 21.422C60.6663 21.9787 60.3364 23.0194 59.552 23.078L59.465 23.0845C52.0153 23.6409 45.1812 27.9913 40.9759 34.8542L38.01 39.6943Z"
-									fill="currentColor"
-								/>
-								<path
-									d="M15.296 36.5912C14.1726 37.8368 12.2763 37.7221 11.2913 36.349L0.547139 21.3709C-0.432786 20.0048 -0.0547272 18.0273 1.34794 17.1822L22.7709 4.27482C29.6029 0.158495 37.7319 -0.277291 44.8086 3.0934L60.3492 10.4956C60.5897 10.6101 60.7997 10.7872 60.9599 11.0106C61.8149 12.2025 60.8991 13.9056 59.5058 13.7148L50.2478 12.4467C42.8554 11.4342 35.4143 14.2848 30.1165 20.1587L15.296 36.5912Z"
-									fill="currentColor"
-								/>
-							</svg>
+							<img src="./assets/brand/chutes-flat-light.svg" alt="" />
 							<span>Chutes</span>
 						</div>
 						<p>Use as the main brand mark on dark backgrounds with plenty of negative space.</p>
@@ -213,7 +196,7 @@ const result = await client.chat.create({ model: "deepseek", prompt: "hello" });
 					<div class="logo-card">
 						<h3>Block mark</h3>
 						<div class="block-mark">
-							<img src="../chutes-web/static/cdn/chutes/chutesblock.webp" alt="Chutes block mark" />
+							<img src="./assets/brand/chutesblock.webp" alt="Chutes block mark" />
 							<span class="eyebrow">Secondary emblem for compact uses.</span>
 						</div>
 						<p>Good for avatars, tiles, internal tools, and places where the full mark is too wide.</p>
@@ -221,7 +204,7 @@ const result = await client.chat.create({ model: "deepseek", prompt: "hello" });
 					<div class="logo-card">
 						<h3>Favicon</h3>
 						<div class="favicon-mark">
-							<img src="../chutes-web/static/favicon.png" alt="Chutes favicon" />
+							<img src="./assets/brand/favicon.png" alt="Chutes favicon" />
 							<span class="eyebrow">App icon, browser tab, share metadata.</span>
 						</div>
 						<p>Use anywhere a small, high-contrast square icon is needed.</p>
@@ -229,21 +212,21 @@ const result = await client.chat.create({ model: "deepseek", prompt: "hello" });
 				</div>
 
 				<div class="asset-grid" style="margin-top:18px">
-					<div class="asset-chip"><img src="../chutes-web/static/images/logos/openrouter.png" alt="OpenRouter" /></div>
-					<div class="asset-chip"><img src="../chutes-web/static/images/logos/cline.png" alt="Cline" /></div>
-					<div class="asset-chip"><img src="../chutes-web/static/images/logos/kilo.png" alt="Kilo" /></div>
-					<div class="asset-chip"><img src="../chutes-web/static/images/logos/roocode.png" alt="Roo Code" /></div>
-					<div class="asset-chip"><img src="../chutes-web/static/images/logos/fetchai.webp" alt="FetchAI" /></div>
-					<div class="asset-chip"><img src="../chutes-web/static/images/logos/deepfakeai.png" alt="DeepFakeAI" /></div>
+					<div class="asset-chip"><img src="./assets/logos/partners/openrouter.png" alt="OpenRouter" /></div>
+					<div class="asset-chip"><img src="./assets/logos/partners/cline.png" alt="Cline" /></div>
+					<div class="asset-chip"><img src="./assets/logos/partners/kilo.png" alt="Kilo" /></div>
+					<div class="asset-chip"><img src="./assets/logos/partners/roocode.png" alt="Roo Code" /></div>
+					<div class="asset-chip"><img src="./assets/logos/partners/fetchai.webp" alt="FetchAI" /></div>
+					<div class="asset-chip"><img src="./assets/logos/partners/deepfakeai.png" alt="DeepFakeAI" /></div>
 				</div>
 
 				<div class="asset-grid" style="margin-top:16px">
-					<div class="asset-chip"><img src="../chutes-web/static/images/logos/bw/deepseek.png" alt="DeepSeek" /></div>
-					<div class="asset-chip"><img src="../chutes-web/static/images/logos/bw/openai.png" alt="OpenAI" /></div>
-					<div class="asset-chip"><img src="../chutes-web/static/images/logos/bw/mistralai.png" alt="Mistral" /></div>
-					<div class="asset-chip"><img src="../chutes-web/static/images/logos/bw/qwen.png" alt="Qwen" /></div>
-					<div class="asset-chip"><img src="../chutes-web/static/images/logos/bw/microsoft.png" alt="Microsoft" /></div>
-					<div class="asset-chip"><img src="../chutes-web/static/images/logos/bw/gemma.png" alt="Gemma" /></div>
+					<div class="asset-chip"><img src="./assets/logos/providers-bw/deepseek.png" alt="DeepSeek" /></div>
+					<div class="asset-chip"><img src="./assets/logos/providers-bw/openai.png" alt="OpenAI" /></div>
+					<div class="asset-chip"><img src="./assets/logos/providers-bw/mistralai.png" alt="Mistral" /></div>
+					<div class="asset-chip"><img src="./assets/logos/providers-bw/qwen.png" alt="Qwen" /></div>
+					<div class="asset-chip"><img src="./assets/logos/providers-bw/microsoft.png" alt="Microsoft" /></div>
+					<div class="asset-chip"><img src="./assets/logos/providers-bw/gemma.png" alt="Gemma" /></div>
 				</div>
 			</section>
 
@@ -260,9 +243,9 @@ const result = await client.chat.create({ model: "deepseek", prompt: "hello" });
 							loop
 							muted
 							playsinline
-							poster="../chutes-web/static/images/hero-poster.webp"
+							poster="./assets/media/hero/hero-poster.webp"
 						>
-							<source src="../chutes-web/static/images/testnew.mp4" type="video/mp4" />
+							<source src="./assets/media/hero/testnew.mp4" type="video/mp4" />
 						</video>
 						<div class="media-meta">
 							<h3>Homepage hero motion</h3>
@@ -275,9 +258,9 @@ const result = await client.chat.create({ model: "deepseek", prompt: "hello" });
 							loop
 							muted
 							playsinline
-							poster="../chutes-web/static/images/platformdecentracubeposter.webp"
+							poster="./assets/media/hero/platformdecentracubeposter.webp"
 						>
-							<source src="../chutes-web/static/images/decentracube.mp4" type="video/mp4" />
+							<source src="./assets/media/hero/decentracube.mp4" type="video/mp4" />
 						</video>
 						<div class="media-meta">
 							<h3>Platform motion</h3>
@@ -285,14 +268,14 @@ const result = await client.chat.create({ model: "deepseek", prompt: "hello" });
 						</div>
 					</div>
 					<div class="media-card">
-						<img src="../chutes-web/static/images/hyperscale/devs.jpg" alt="Developers editorial image" />
+						<img src="./assets/images/hyperscale/devs.jpg" alt="Developers editorial image" />
 						<div class="media-meta">
 							<h3>Hyperscale photography</h3>
 							<p>Editorial stills should feel graphic, moody, and slightly futuristic.</p>
 						</div>
 					</div>
 					<div class="media-card">
-						<img src="../chutes-web/static/images/platformscreen.jpg" alt="Platform screenshot" />
+						<img src="./assets/images/product/platformscreen.jpg" alt="Platform screenshot" />
 						<div class="media-meta">
 							<h3>Product stills</h3>
 							<p>Use rounded containers and keep the surrounding chrome dark and quiet.</p>
