@@ -11,6 +11,18 @@ This directory is now a self-contained brand package distilled from `chutes-web/
 - Pull structured values from `chutes-tokens.json` for tooling, design prompts, or code generation.
 - Use `ASSETS.md` and `ICONS.md` to find the packaged files quickly.
 
+## Chutes Logo SVG
+
+If you just need the main Chutes logo as a raw SVG, grab this file first:
+
+- `./assets/brand/chutes-logo.svg`
+
+Related logo files:
+
+- `./assets/brand/chutes-flat-light.svg`: UI-sized light variant used across the package
+- `./assets/brand/chutes-flat-dark.svg`: dark variant for light backgrounds
+- `./assets/brand/chutesblock.webp`: compact block mark
+
 ## Package Map
 
 - `BRAND_GUIDE.md`: full brand guidance, usage rules, and implementation notes

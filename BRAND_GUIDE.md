@@ -23,6 +23,7 @@ Where the repo does not define explicit rules, the guidance below is inferred fr
 
 Packaged logo assets:
 
+- Canonical Chutes logo SVG: `./assets/brand/chutes-logo.svg`
 - Primary flat mark, light: `./assets/brand/chutes-flat-light.svg`
 - Primary flat mark, dark: `./assets/brand/chutes-flat-dark.svg`
 - Secondary block mark: `./assets/brand/chutesblock.webp`
@@ -32,6 +33,7 @@ Packaged logo assets:
 
 Recommended usage:
 
+- If someone needs the raw vector logo file, start with `./assets/brand/chutes-logo.svg`.
 - Use the flat mark as the default brand mark in navigation, headers, and product shells.
 - Use the block mark for compact placements, thumbnails, tiles, avatars, or art-led compositions.
 - Use the favicon only for browser, small app-icon, or metadata contexts.

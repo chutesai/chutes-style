@@ -4,11 +4,18 @@ This package now includes local copies of the brand-critical assets inside `./as
 
 ## Core Brand Assets
 
+- Canonical Chutes logo SVG: `./assets/brand/chutes-logo.svg`
 - Primary flat mark, light: `./assets/brand/chutes-flat-light.svg`
 - Primary flat mark, dark: `./assets/brand/chutes-flat-dark.svg`
 - Alternate block mark: `./assets/brand/chutesblock.webp`
 - Favicon: `./assets/brand/favicon.png`
 - Social fallback art: `./assets/brand/chutes-opengraph.webp`
+
+## Quick Grab
+
+If someone asks for "the Chutes logo SVG", use this first:
+
+- `./assets/brand/chutes-logo.svg`
 
 ## Fonts
 
