@@ -5,6 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<title>Chutes Brand Board</title>
 		<link rel="stylesheet" href="./preview.css" />
+		<script src="./preview.js" defer></script>
 	</head>
 	<body class="style-guide">
 		<div class="page">
@@ -470,13 +471,29 @@ const result = await client.chat.create({ model: "deepseek", prompt: "hello" });
 				</div>
 
 				<div class="media-grid">
-					<div class="media-card">
-						<video autoplay loop muted playsinline poster="./assets/media/hero/hero-poster.webp">
-							<source src="./assets/media/hero/testnew.mp4" type="video/mp4" />
-						</video>
+					<div class="media-card media-card--scroll" data-scroll-scrub>
+						<div class="media-stage" data-scroll-stage>
+							<img
+								src="./assets/media/hero/testnew-sequence/frame-01.jpg"
+								alt="Homepage hero cube motion frame"
+								data-scroll-frame
+								data-sequence-base="./assets/media/hero/testnew-sequence/frame-"
+								data-sequence-count="18"
+							/>
+							<div class="media-overlay">
+								<span class="media-badge">Scroll-linked preview</span>
+								<span class="media-readout" data-scroll-readout>14% scrub</span>
+								<div class="media-progress">
+									<span class="media-progress__fill" data-scroll-progress></span>
+								</div>
+							</div>
+						</div>
 						<div class="media-meta">
 							<h3>Homepage hero motion</h3>
-							<p>Use for the biggest brand statement and pair it with a dark gradient wash.</p>
+							<p>
+								Scroll the page to scrub the cube rotation. Use this as the biggest brand statement and
+								pair it with a dark gradient wash.
+							</p>
 						</div>
 					</div>
 					<div class="media-card">

@@ -21,6 +21,7 @@ This package now includes local copies of the brand-critical assets inside `./as
 
 - Homepage hero loop: `./assets/media/hero/testnew.mp4`
 - Homepage hero poster: `./assets/media/hero/hero-poster.webp`
+- Homepage hero scroll-scrub frame set: `./assets/media/hero/testnew-sequence/*`
 - Platform hero loop: `./assets/media/hero/decentracube.mp4`
 - Platform hero poster: `./assets/media/hero/platformdecentracubeposter.webp`
 - Ambient cubes loop: `./assets/media/ambient/fallingcubes.mp4`
@@ -75,6 +76,7 @@ Use the grayscale set for clean provider walls and the color set for model cards
 - `./assets/fonts/NeueHaas/*`
 - `./assets/fonts/mono/JetBrainsMonoNLNerdFont-Regular.woff2`
 - `./assets/media/hero/testnew.mp4` with `./assets/media/hero/hero-poster.webp`
+- `./assets/media/hero/testnew-sequence/*` when you want the homepage cube to scrub with scroll
 - `./assets/media/hero/decentracube.mp4` with `./assets/media/hero/platformdecentracubeposter.webp`
 - `./assets/media/ambient/fallingcubes.mp4` with `./assets/media/ambient/fallingchute-poster.webp`
 - `./assets/logos/providers-bw/*`

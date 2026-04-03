@@ -744,12 +744,92 @@ video {
 	overflow: hidden;
 }
 
+.media-card {
+	display: grid;
+	grid-template-rows: auto 1fr;
+}
+
 .media-card video,
 .media-card img {
 	width: 100%;
 	height: 240px;
 	object-fit: cover;
 	background: var(--chutes-ink-800);
+}
+
+.media-stage {
+	position: relative;
+	overflow: hidden;
+	background:
+		radial-gradient(circle at 50% 100%, rgba(99, 102, 241, 0.22) 0%, rgba(99, 102, 241, 0) 46%),
+		radial-gradient(circle at 15% 18%, rgba(139, 255, 198, 0.1) 0%, rgba(139, 255, 198, 0) 34%),
+		var(--chutes-ink-800);
+	perspective: 1400px;
+}
+
+.media-card--scroll .media-stage {
+	--scroll-rotate-x: 4deg;
+	--scroll-rotate-y: -8deg;
+	--scroll-shift-y: 4px;
+}
+
+.media-card--scroll img {
+	will-change: transform;
+	transform:
+		perspective(1400px)
+		translateY(var(--scroll-shift-y))
+		rotateX(var(--scroll-rotate-x))
+		rotateY(var(--scroll-rotate-y))
+		scale(1.02);
+	transform-origin: center center;
+	transition: transform 180ms ease-out;
+}
+
+.media-overlay {
+	position: absolute;
+	inset: auto 14px 14px;
+	display: grid;
+	grid-template-columns: 1fr auto;
+	gap: 10px 12px;
+	align-items: center;
+	padding: 12px 14px;
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	border-radius: 16px;
+	background: linear-gradient(180deg, rgba(18, 18, 18, 0.78), rgba(12, 12, 12, 0.92));
+	backdrop-filter: blur(14px);
+}
+
+.media-badge,
+.media-readout {
+	font-family: var(--chutes-font-display);
+	font-size: 0.82rem;
+	line-height: 1;
+}
+
+.media-badge {
+	color: var(--chutes-foreground);
+}
+
+.media-readout {
+	color: var(--chutes-moss);
+	text-align: right;
+}
+
+.media-progress {
+	grid-column: 1 / -1;
+	overflow: hidden;
+	height: 6px;
+	border-radius: 999px;
+	background: rgba(255, 255, 255, 0.08);
+}
+
+.media-progress__fill {
+	display: block;
+	width: 100%;
+	height: 100%;
+	transform: scaleX(0.14);
+	transform-origin: left center;
+	background: var(--chutes-gradient-brand);
 }
 
 .campaign-card {

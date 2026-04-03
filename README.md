@@ -15,6 +15,7 @@ This directory is now a self-contained brand package distilled from `chutes-web/
 
 - `BRAND_GUIDE.md`: full brand guidance, usage rules, and implementation notes
 - `index.html`: visual overview board
+- `preview.js`: scroll-linked interaction for the board's motion demo
 - `server.mjs`: tiny local preview server that serves `/` as the brand board
 - `package.json`: preview commands for the packaged guide
 - `chutes-tokens.css`: reusable token file with local font references
