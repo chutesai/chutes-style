@@ -4,16 +4,35 @@ This directory is now a self-contained brand package distilled from `chutes-web/
 
 ## Start Here
 
+- Run `npm run preview` inside `chutes-style/` to launch a local preview server at `http://127.0.0.1:4173/`.
 - Read `BRAND_GUIDE.md` for the actual brand rules and design guidance.
-- Open `preview.html` in a browser for a visual reference board.
+- Open `index.html` directly if you want the raw standalone file, but the local server is the easier default.
 - Import `chutes-tokens.css` when you want the same fonts, tokens, and starter primitives.
 - Pull structured values from `chutes-tokens.json` for tooling, design prompts, or code generation.
 - Use `ASSETS.md` and `ICONS.md` to find the packaged files quickly.
 
+## Local Preview
+
+From the project root:
+
+```bash
+cd chutes-style
+npm run preview
+```
+
+Notes:
+
+- The server is zero-dependency and uses Node's built-in `http` module.
+- `/` serves `index.html` automatically.
+- You can change the port with `PORT=4321 npm run preview`.
+- `npm run dev` works too and points to the same preview server.
+
 ## Package Map
 
 - `BRAND_GUIDE.md`: full brand guidance, usage rules, and implementation notes
-- `preview.html`: visual overview board
+- `index.html`: visual overview board
+- `server.mjs`: tiny local preview server that serves `/` as the brand board
+- `package.json`: preview commands for the packaged guide
 - `chutes-tokens.css`: reusable token file with local font references
 - `chutes-tokens.json`: machine-readable token and asset metadata
 - `ASSETS.md`: packaged asset inventory
@@ -46,6 +65,6 @@ This package was reconstructed from the live implementation in:
 
 ## Snapshot
 
-Generated from `preview.html`.
+Generated from `index.html`.
 
 ![Chutes brand board snapshot](./preview-snapshot.png)

@@ -1,0 +1,10 @@
+{
+	"name": "chutes-style",
+	"private": true,
+	"version": "1.0.0",
+	"description": "Local preview server for the Chutes brand package",
+	"scripts": {
+		"preview": "node server.mjs",
+		"dev": "node server.mjs"
+	}
+}
