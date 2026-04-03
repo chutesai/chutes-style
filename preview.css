@@ -776,6 +776,14 @@ video {
 	transition: transform 280ms ease;
 }
 
+.media-card--hyperscale {
+	position: relative;
+}
+
+.media-image--hyperscale {
+	filter: saturate(0) hue-rotate(-10deg);
+}
+
 .media-stage {
 	position: relative;
 	overflow: hidden;
@@ -919,6 +927,10 @@ video {
 	.media-card:hover img,
 	.media-card:hover video {
 		transform: scale(1.03);
+	}
+
+	.media-card--hyperscale:hover .media-image--hyperscale {
+		filter: saturate(1) hue-rotate(0deg);
 	}
 
 	.media-card--scroll:hover [data-scroll-frame] {
